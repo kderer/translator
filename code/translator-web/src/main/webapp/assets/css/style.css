@@ -1,0 +1,24 @@
+.resultDiv {
+	padding: 0 8px;
+}
+
+.requestPinyinDiv {
+	margin: 0 !important;
+}
+
+.responseTextDiv {
+	margin-top: 15px !important;
+	margin-bottom: 5px !important;
+}
+
+.responsePinyinDiv {
+	margin: 0 !important;
+}
+
+.textDiv {
+	margin-bottom: 4px !important;
+}
+
+.textDiv textarea {
+	margin-bottom: 0 !important;
+}
