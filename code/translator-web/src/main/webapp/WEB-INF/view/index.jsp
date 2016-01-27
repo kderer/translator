@@ -19,7 +19,7 @@
 	<script type="text/javascript"
 		src="<spring:url value="/assets/js/index.js"/>"></script>
 	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><spring:message code="label.index.title" /></title>
 </head>
 <body>
@@ -29,7 +29,7 @@
 			<h1>Translator</h1>
 		</div>
 
-		<div data-role="main" class="ui-content">
+		<div data-role="content">
 			<form method="post" action="translate.request" id="translateForm">
 				<div class="ui-field-contain">
 					<label for="flSelect"><spring:message code="label.index.from" /></label>
