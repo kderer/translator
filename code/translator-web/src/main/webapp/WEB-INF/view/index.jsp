@@ -59,20 +59,18 @@
 				
 				<div class="ui-field-contain textDiv">
 					<textarea name="text" id="textInput"></textarea>
+                    <div class="requestPinyinDiv" style="display: none;" id="requestPinyinOutputDiv">
+                        <span id="requestPinyinOutput"> </span>
+                    </div>
 				</div>				
 			</form>
 			
 			<div class="resultDiv">
-				<div class="requestPinyinDiv" style="display: none;" id="requestPinyinOutputDiv">
-					<span id="requestPinyinOutput"> </span>
-				</div>
-				
 				<div class="ui-field-contain responseTextDiv" style="display: none;" id="resultTextOutputDiv">
 					<span id="resultTextOutput"> </span>
-				</div>
-				
-				<div class="ui-field-contain responsePinyinDiv" style="display: none;" id="resultPinyinOutputDiv">
-					<span id="resultPinyinOutput"> </span>
+                    <div class="responsePinyinDiv" style="display: none;" id="resultPinyinOutputDiv">
+                        <span id="resultPinyinOutput"> </span>
+                    </div>
 				</div>
 			</div>
 		</div>
