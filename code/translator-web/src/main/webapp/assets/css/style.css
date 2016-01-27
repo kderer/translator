@@ -4,15 +4,16 @@
 
 .requestPinyinDiv {
 	margin: 0 !important;
+	padding-left: 5px;
 }
 
 .responseTextDiv {
-	margin-top: 15px !important;
-	margin-bottom: 5px !important;
+	padding-left: 5px;
 }
 
 .responsePinyinDiv {
 	margin: 0 !important;
+	padding-top: 5px;
 }
 
 .textDiv {

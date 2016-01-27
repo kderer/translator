@@ -31,47 +31,42 @@
 
 		<div data-role="content">
 			<form method="post" action="translate.request" id="translateForm">
-				<div class="ui-field-contain">
-					<label for="flSelect"><spring:message code="label.index.from" /></label>
-					
+				<div class="ui-grid-a">
+				<div class="ui-block-a">
 					<select name="fl" id="flSelect">
-						<option value=""><spring:message
-								code="label.select.default.select" /></option>
+						<option value=""><spring:message code="label.select.from" /></option>
 						<c:forEach items="${languages}" var="language">
 							<option value="${language.code}"><spring:message
 									code="${language.i18nKey}" /></option>
 						</c:forEach>
 					</select>
 				</div>
-
-				<div class="ui-field-contain">
-					<label for="tlSelect"><spring:message code="label.index.to" /></label>
-
+					
+				<div class="ui-block-b">
 					<select name="tl" id="tlSelect">
-						<option value=""><spring:message
-								code="label.select.default.select" /></option>
+						<option value="">
+							<spring:message code="label.select.to" /></option>
 						<c:forEach items="${languages}" var="language">
 							<option value="${language.code}"><spring:message
 									code="${language.i18nKey}" /></option>
 						</c:forEach>
 					</select>
 				</div>
-				
-				<div class="ui-field-contain textDiv">
-					<textarea name="text" id="textInput"></textarea>
-                    <div class="requestPinyinDiv" style="display: none;" id="requestPinyinOutputDiv">
-                        <span id="requestPinyinOutput"> </span>
-                    </div>
-				</div>				
+				</div>
+				<div class="ui-grid-b textDiv">
+					<textarea name="text" id="textInput"></textarea>                    
+				</div>																
 			</form>
 			
-			<div class="resultDiv">
-				<div class="ui-field-contain responseTextDiv" style="display: none;" id="resultTextOutputDiv">
-					<span id="resultTextOutput"> </span>
-                    <div class="responsePinyinDiv" style="display: none;" id="resultPinyinOutputDiv">
-                        <span id="resultPinyinOutput"> </span>
-                    </div>
-				</div>
+			<div class="ui-grid-c requestPinyinDiv" style="display: none;" id="requestPinyinOutputDiv">
+                <span id="requestPinyinOutput"> </span>
+            </div>
+            
+            <div class="ui-field-contain responseTextDiv" style="display: none;" id="resultTextOutputDiv">
+				<span id="resultTextOutput"> </span>
+                <div class="responsePinyinDiv" style="display: none;" id="resultPinyinOutputDiv">
+                    <span id="resultPinyinOutput"> </span>
+                </div>
 			</div>
 		</div>
 	</div>	
