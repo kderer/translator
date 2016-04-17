@@ -29,9 +29,6 @@ public class AccessTokenConfig {
 		params.add("client_id", client_id);
 		params.add("client_secret", System.getProperty("MS_CLIENT_SECRET"));
 		params.add("scope", scope);
-		
-		System.out.println("==============Property: " + System.getProperty("MS_CLIENT_SECRET"));
-		System.out.println("==============Env: " + System.getenv("MS_CLIENT_SECRET"));
 	}
 	
 	public MultiValueMap<String, String> accessTokenParams() {
