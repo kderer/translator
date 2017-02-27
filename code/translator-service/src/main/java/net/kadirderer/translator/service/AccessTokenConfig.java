@@ -27,7 +27,9 @@ public class AccessTokenConfig {
 		
 		params.add("grant_type", grant_type);
 		params.add("client_id", client_id);
-		params.add("client_secret", System.getProperty("MS_CLIENT_SECRET"));
+		//On AWS We have to use System.getProperty
+		//params.add("client_secret", System.getProperty("MS_CLIENT_SECRET"));
+		params.add("client_secret", System.getenv("MS_CLIENT_SECRET"));
 		params.add("scope", scope);
 	}
 	
